@@ -14,11 +14,7 @@ const Contact = () => {
   const [successMsg, setSuccessMsg] = useState("");
 
   // ========== Email Validation start here ==============
-  const emailValidation = (email: string) => {
-    return String(email)
-      .toLocaleLowerCase()
-      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
-  };
+ 
   // ========== Email Validation end here ================
 
   const handleSend = (e: any) => {
@@ -29,8 +25,8 @@ const Contact = () => {
       setErrMsg("Phone number is required!");
     } else if (email === "") {
       setErrMsg("Please give your Email!");
-    } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
+    // } else if (!emailValidation(email)) {
+    //   setErrMsg("Give a valid Email!");
     } else if (subject === "") {
       setErrMsg("Plese give your Subject!");
     } else if (message === "") {
