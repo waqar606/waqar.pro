@@ -13,7 +13,7 @@ const ContactLeft = () => {
         <h3 className="text-3xl font-bold text-white">Waqar Ahmed</h3>
         <p className="text-lg font-normal text-gray-400">React Developer</p>
         <p className="text-base text-gray-400 tracking-wide">
-          Want My Services Then Feel Free To Contact Me
+          Want My Services Then Feel Free To Contact.
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
           Phone: <span className="text-lightText">03182015606</span>
